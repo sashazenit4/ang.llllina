@@ -168,6 +168,12 @@ body {
         font-family: "AmaticSC-Regular";
     }
 
+    .portfolio__content-wrapper {
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
 @font-face {
     font-family: "AmaticSC-Regular";
     src: url("fonts/AmaticSC-Regular.ttf");
