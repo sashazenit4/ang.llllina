@@ -1,5 +1,5 @@
 body {
-    background-color: #C2EBF9;
+    background-color: #D2F2FC;
 }
 
 .header {
@@ -43,7 +43,7 @@ body {
         padding-top: 15px;
         font-size: 48px;
         padding-left: 36px;
-        font-family: "AmaticSC-Regular";
+        font-family: "AmaticSC-Bold";
     }
 
     .menu__list {
@@ -72,6 +72,101 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.about {
+    width: 100%;
+}
+
+    .about__title-wrapper {
+        width: 100%;
+        height: 200px;
+    }
+
+    .about__title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 32.5px;
+        font-size: 64px;
+        font-family: "AmaticSC-Regular";
+    }
+
+    /* cloud-ellipses */
+
+    .cloud__wrapper {
+        width: 402px;
+        height: 200px;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .cloud {
+        width: 402px;
+        height: 149px;
+        background-color: white;
+        position: absolute;
+        z-index: -1;
+        border-radius: 700px / 275px;
+    }
+
+    .cloud-mini {
+        width: 100px; 
+        height: 50px;
+        background: white;
+        border-radius: 100px/50px;
+        position: absolute;
+    }
+
+    .type1 {
+        right: 400px;
+        top: 100px;
+    }
+
+    .type2 {
+        right: 400px;    
+    }
+
+    .type3 {
+        left: 400px;
+    }
+
+    .type4 {
+        left: 400px;
+        top: 100px;
+    }
+
+    /* /cloud-ellipses */
+
+    .about__content-wrapper {
+        width: 75%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
+    .about__content {
+        text-align: center;
+        font-size: 48px;
+        font-family: "Pangolin-Regular";
+    }
+
+.portfolio {
+    width: 100%;
+}
+
+    .portfolio__title-wrapper {
+        width: 100%;
+        height: 200px;
+    }
+
+    .portfolio__title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 32.5px;
+        font-size: 64px;
+        font-family: "AmaticSC-Regular";
+    }
 
 @font-face {
     font-family: "AmaticSC-Regular";
