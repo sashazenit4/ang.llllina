@@ -194,6 +194,7 @@ body {
 
 .services {
     width: 100%;
+    margin-bottom: 80px;
 }
 
     .services__title-wrapper {
@@ -246,6 +247,68 @@ body {
 
     .service__price {
         font-size: 23px;
+    }
+
+.form {
+    width: 100%;
+    margin-bottom: 75px;
+}
+   
+    .form__wrapper {
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+
+    .form__title {
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form__inputs {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .form__input {
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-clip: padding-box;
+        border: none;
+        border-bottom: 1px solid #000;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        display: block;
+        background-color: transparent;
+        margin-bottom: 20px;
+        height: 50px;
+        padding-left: 8px;
+    }
+
+    .form__message {
+        margin-bottom: 20px;
+        background-color: transparent;
+        resize: none;
+        background-clip: padding-box;
+        border: none;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .form__submit {
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid #000;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 30px;
     }
 
 @font-face {
