@@ -19,11 +19,11 @@
             </div>
             <nav class="menu__buttons">
                 <ul class="menu__list">
-                    <li class="menu__btn" style="list-style-type: none;"><a href="#">"Вверх"</a></li>
+                    <li class="menu__btn" style="list-style-type: none;"><a href="up.php">"Вверх"</a></li>
                     <li class="menu__btn" style="list-style-type: none;"><a href="#ABOUT">Обо мне</a></li>
                     <li class="menu__btn" style="list-style-type: none;"><a href="#PORTFOLIO">Мои работы</a></li>
-                    <li class="menu__btn" style="list-style-type: none;"><a href="#">Услуги</a></li>
-                    <li class="menu__btn" style="list-style-type: none;"><a href="#">Связь</a></li>
+                    <li class="menu__btn" style="list-style-type: none;"><a href="#SERVICES">Услуги</a></li>
+                    <li class="menu__btn" style="list-style-type: none;"><a href="#FORM">Связь</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,10 +61,11 @@
             </div>
         </div>
         <div class="portfolio__content-wrapper">   
-            <iframe width="720" height="405" src="https://www.youtube.com/embed/videoseries?list=PLHElN_5ZaktjFL5EafhaSJ1fg5mBcfgL9" 
-                title="my YouTube playlist" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>         
+            <iframe width="1120" height="630" 
+                src="https://www.youtube.com/embed/videoseries?list=PLHElN_5ZaktjFL5EafhaSJ1fg5mBcfgL9" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
     </section>
     <main class="services">
@@ -92,7 +93,7 @@
                     <u>от 5 до 50 долларов</u>
                 </div>
             </div>
-            <div class="service">
+            <div id="SERVICES" class="service">
                 <div class="service__title">
                     Сборка
                 </div>
@@ -122,5 +123,9 @@
             </div>
         </div>
     </main>
+    <form  id="FORM" class="form">
+        <div class="form__wrapper"></div>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
