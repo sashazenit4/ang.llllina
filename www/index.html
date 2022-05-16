@@ -124,7 +124,7 @@
             </div>
         </div>
     </main>
-    <form method="post" id="FORM" class="form">
+    <form action="mail.php" method="post" id="FORM" class="form">
         <div class="form__wrapper">
             <div class="form__title">
                 Связаться со мной
@@ -132,7 +132,7 @@
             <div class="form__inputs">
                 <input class="form__input" type="text" name="name" id="NAME" placeholder="Имя...">
                 <input class="form__input" type="text" name="tel" id="TEL" placeholder="+7 (999) 999-99-99">
-                <input required class="form__input" type="text" name="mail" id="EMAIL" placeholder="best@client.com">
+                <input required class="form__input" type="email" name="mail" id="EMAIL" placeholder="best@client.com">
                 <textarea class="form__message" name="message" id="MESSAGE" cols="30" rows="10" placeholder="Сообщение..."></textarea>
                 <input class="form__submit" type="submit" value="Связаться со мной!">
             </div>
@@ -143,34 +143,6 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $("#TEL").mask("+7 (999) 999-99-99");
-        });
-    </script>
-    <!--ajax-запрос-->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#FORM').submit(function(e) {
-                e.preventDefault();
-                $.ajax({
-                    type: "POST",
-                    url: 'mail.php',
-                    data: $(this).serialize(),
-                    success: function(response)
-                    {
-                        var jsonData = JSON.parse(response);
-        
-                        // user is logged in successfully in the back-end
-                        // let's redirect
-                        if (jsonData.success == "1")
-                        {
-                            alert('Письма успешно отправлены!');
-                        }
-                        else
-                        {
-                            alert('Произошла ошибка!');
-                        }
-                }
-            });
-            });
         });
     </script>
 </body>
